@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BFAFD5C28FC5261000B554F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD5B28FC5261000B554F /* AppDelegate.swift */; };
+		3BFAFD5E28FC5261000B554F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD5D28FC5261000B554F /* ViewController.swift */; };
+		3BFAFD6028FC5263000B554F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFAFD5F28FC5263000B554F /* Assets.xcassets */; };
+		3BFAFD6328FC5263000B554F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFAFD6128FC5263000B554F /* Main.storyboard */; };
+		3BFAFD7628FC526E000B554F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD6B28FC526E000B554F /* Constant.swift */; };
+		3BFAFD7728FC526E000B554F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD6C28FC526E000B554F /* DateUtil.swift */; };
+		3BFAFD7828FC526E000B554F /* KSCLyricParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD6E28FC526E000B554F /* KSCLyricParser.swift */; };
+		3BFAFD7928FC526E000B554F /* LyricParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD6F28FC526E000B554F /* LyricParser.swift */; };
+		3BFAFD7A28FC526E000B554F /* LRCLyricParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD7028FC526E000B554F /* LRCLyricParser.swift */; };
+		3BFAFD7B28FC526E000B554F /* Lyric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD7228FC526E000B554F /* Lyric.swift */; };
+		3BFAFD7C28FC526E000B554F /* LyricLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD7328FC526E000B554F /* LyricLine.swift */; };
+		3BFAFD7D28FC526E000B554F /* SuperStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAFD7528FC526E000B554F /* SuperStringExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BFAFD5828FC5261000B554F /* LyricDemo_kim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyricDemo_kim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFAFD5B28FC5261000B554F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BFAFD5D28FC5261000B554F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BFAFD5F28FC5263000B554F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BFAFD6228FC5263000B554F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BFAFD6428FC5263000B554F /* LyricDemo_kim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LyricDemo_kim.entitlements; sourceTree = "<group>"; };
+		3BFAFD6B28FC526E000B554F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3BFAFD6C28FC526E000B554F /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		3BFAFD6E28FC526E000B554F /* KSCLyricParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSCLyricParser.swift; sourceTree = "<group>"; };
+		3BFAFD6F28FC526E000B554F /* LyricParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricParser.swift; sourceTree = "<group>"; };
+		3BFAFD7028FC526E000B554F /* LRCLyricParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCLyricParser.swift; sourceTree = "<group>"; };
+		3BFAFD7228FC526E000B554F /* Lyric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lyric.swift; sourceTree = "<group>"; };
+		3BFAFD7328FC526E000B554F /* LyricLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricLine.swift; sourceTree = "<group>"; };
+		3BFAFD7528FC526E000B554F /* SuperStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperStringExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BFAFD5528FC5261000B554F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BFAFD4F28FC5261000B554F = {
+			isa = PBXGroup;
+			children = (
+				3BFAFD5A28FC5261000B554F /* LyricDemo_kim */,
+				3BFAFD5928FC5261000B554F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BFAFD5928FC5261000B554F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAFD5828FC5261000B554F /* LyricDemo_kim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BFAFD5A28FC5261000B554F /* LyricDemo_kim */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAFD6A28FC526E000B554F /* Vender */,
+				3BFAFD5B28FC5261000B554F /* AppDelegate.swift */,
+				3BFAFD5D28FC5261000B554F /* ViewController.swift */,
+				3BFAFD5F28FC5263000B554F /* Assets.xcassets */,
+				3BFAFD6128FC5263000B554F /* Main.storyboard */,
+				3BFAFD6428FC5263000B554F /* LyricDemo_kim.entitlements */,
+			);
+			path = LyricDemo_kim;
+			sourceTree = "<group>";
+		};
+		3BFAFD6A28FC526E000B554F /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAFD6B28FC526E000B554F /* Constant.swift */,
+				3BFAFD6C28FC526E000B554F /* DateUtil.swift */,
+				3BFAFD6D28FC526E000B554F /* Parser */,
+				3BFAFD7128FC526E000B554F /* Model */,
+				3BFAFD7428FC526E000B554F /* String */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		3BFAFD6D28FC526E000B554F /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAFD6E28FC526E000B554F /* KSCLyricParser.swift */,
+				3BFAFD6F28FC526E000B554F /* LyricParser.swift */,
+				3BFAFD7028FC526E000B554F /* LRCLyricParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		3BFAFD7128FC526E000B554F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAFD7228FC526E000B554F /* Lyric.swift */,
+				3BFAFD7328FC526E000B554F /* LyricLine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BFAFD7428FC526E000B554F /* String */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAFD7528FC526E000B554F /* SuperStringExtension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BFAFD5728FC5261000B554F /* LyricDemo_kim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BFAFD6728FC5263000B554F /* Build configuration list for PBXNativeTarget "LyricDemo_kim" */;
+			buildPhases = (
+				3BFAFD5428FC5261000B554F /* Sources */,
+				3BFAFD5528FC5261000B554F /* Frameworks */,
+				3BFAFD5628FC5261000B554F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyricDemo_kim;
+			productName = LyricDemo_kim;
+			productReference = 3BFAFD5828FC5261000B554F /* LyricDemo_kim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BFAFD5028FC5261000B554F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3BFAFD5728FC5261000B554F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 3BFAFD5328FC5261000B554F /* Build configuration list for PBXProject "LyricDemo_kim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BFAFD4F28FC5261000B554F;
+			productRefGroup = 3BFAFD5928FC5261000B554F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BFAFD5728FC5261000B554F /* LyricDemo_kim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BFAFD5628FC5261000B554F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFAFD6028FC5263000B554F /* Assets.xcassets in Resources */,
+				3BFAFD6328FC5263000B554F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BFAFD5428FC5261000B554F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFAFD7828FC526E000B554F /* KSCLyricParser.swift in Sources */,
+				3BFAFD7B28FC526E000B554F /* Lyric.swift in Sources */,
+				3BFAFD5E28FC5261000B554F /* ViewController.swift in Sources */,
+				3BFAFD7728FC526E000B554F /* DateUtil.swift in Sources */,
+				3BFAFD5C28FC5261000B554F /* AppDelegate.swift in Sources */,
+				3BFAFD7928FC526E000B554F /* LyricParser.swift in Sources */,
+				3BFAFD7D28FC526E000B554F /* SuperStringExtension.swift in Sources */,
+				3BFAFD7C28FC526E000B554F /* LyricLine.swift in Sources */,
+				3BFAFD7628FC526E000B554F /* Constant.swift in Sources */,
+				3BFAFD7A28FC526E000B554F /* LRCLyricParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BFAFD6128FC5263000B554F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BFAFD6228FC5263000B554F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BFAFD6528FC5263000B554F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BFAFD6628FC5263000B554F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3BFAFD6828FC5263000B554F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LyricDemo_kim/LyricDemo_kim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3RNW5UU74;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kim.textViewDemo.kim.LyricDemo-kim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3BFAFD6928FC5263000B554F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LyricDemo_kim/LyricDemo_kim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J3RNW5UU74;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kim.textViewDemo.kim.LyricDemo-kim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BFAFD5328FC5261000B554F /* Build configuration list for PBXProject "LyricDemo_kim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BFAFD6528FC5263000B554F /* Debug */,
+				3BFAFD6628FC5263000B554F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BFAFD6728FC5263000B554F /* Build configuration list for PBXNativeTarget "LyricDemo_kim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BFAFD6828FC5263000B554F /* Debug */,
+				3BFAFD6928FC5263000B554F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BFAFD5028FC5261000B554F /* Project object */;
+}
